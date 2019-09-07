@@ -3,7 +3,6 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
-import avatar from '../assets/myAvatar.png'
 
 
 class Resume extends Component {
@@ -14,21 +13,23 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src={avatar}
+                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                 alt="avatar"
                 style={{height: '200px'}}
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Brian Alonzo</h2>
-            <h4 style={{color: 'grey'}}>Web developer</h4>
+            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
+            <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <h5>Address</h5>
+            <p>1 Hacker Way Menlo Park, 94025</p>
             <h5>Phone</h5>
-            <p>(845) 505-7680</p>
+            <p>(123) 456-7890</p>
             <h5>Email</h5>
-            <p>Alonzo.Briane@gmail.com</p>
+            <p>someone@example.com</p>
             <h5>Web</h5>
             <p>mywebsite.com</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
@@ -52,7 +53,7 @@ class Resume extends Component {
                   />
                 <hr style={{borderTop: '3px solid #e22947'}} />
 
-              <h2>Key Project</h2>
+              <h2>Experience</h2>
 
             <Experience
               startYear={2009}
@@ -71,19 +72,19 @@ class Resume extends Component {
               <h2>Skills</h2>
               <Skills
                 skill="javascript"
-                progress={75}
+                progress={100}
                 />
                 <Skills
                   skill="HTML/CSS"
-                  progress={90}
+                  progress={80}
                   />
                   <Skills
                     skill="NodeJS"
-                    progress={40}
+                    progress={50}
                     />
                     <Skills
                       skill="React"
-                      progress={45}
+                      progress={25}
                       />
 
 
